@@ -21,7 +21,8 @@ RUN yum install -y php70 \
 
 # Install System Packages
 RUN yum install -y gcc \
-    git
+    git \
+    tar
 
 # Clean up YUM when completed
 RUN yum clean all

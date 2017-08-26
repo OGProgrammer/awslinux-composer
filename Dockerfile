@@ -18,7 +18,10 @@ RUN yum install -y php70 \
     php70-soap \
     php70-intl \
     php7-pear \
-    gcc
+
+# Install System Packages
+RUN yum install -y gcc \
+    git
 
 # Clean up YUM when completed
 RUN yum clean all
